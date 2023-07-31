@@ -1,0 +1,340 @@
+body{
+    max-width : 1440px;
+    min-width : 320px;
+    height : auto;
+    margin: 0 auto 0 auto ;
+    position : relative ;
+    font-family : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    list-style: none ;
+    text-decoration: none ;
+}
+.details{
+    display : block ;
+    width : 100% ;
+    height : 100% ;
+    text-align: none;
+}
+.det-main-cont{
+    display : block ;
+    margin: 10px;
+    margin-bottom: 50px;
+    position: relative;
+}
+.det-img{
+    width : 53%;
+    height : 500px;
+    display : block ;
+}
+.det-img img{
+    width : 100% ;
+    height:  100% ;
+    object-fit: cover;
+    object-position: 0%;
+}
+.det-info{
+    width : 45% ;
+    height: auto;
+    margin-bottom: 50px;
+    display: block ;
+    position: absolute;
+    text-align : left ;
+    right : 10px;
+    top: 10px;
+    padding : 5px;
+}
+.det-title{
+    color : #464e6b ;
+    text-align : left ;
+}
+.det-price{
+    position: absolute;
+    right : 10px;
+    top : 10px;
+    font-size: calc(17px) ;
+    color : #464e6b;
+    display :block ;
+}
+button{
+    color : #fff ;
+    background : #000 ;
+    width: 100% ;
+    display: block ;
+    padding: 10px 15px ; 
+    border-radius: 10px  ;   
+    cursor: pointer;
+    margin-top: 25px ; 
+}
+.desc{
+    font-size: calc(14px);
+}
+.other-details {
+    margin : 20px ;
+}
+.other-details #dimensions  .tags{
+    border-radius: 50px ;
+    align-self:center ;
+    vertical-align: middle;
+    align-content:flex-end ;
+    color : #000 ;
+    padding: 10px;
+    width: 60px ;
+    text-align: center ;
+    margin : 5px;
+    border: 0.4px solid #e8e8e8;
+    height: 60px ;
+    font-weight: bolder ;
+    display :inline-block ;
+}
+
+.other-details #in-1:checked ~ #dimensions #size-1 ,
+.other-details #in-2:checked ~ #dimensions #size-2 ,
+.other-details #in-3:checked ~ #dimensions #size-3 ,
+.other-details #in-4:checked ~ #dimensions #size-4 ,
+.other-details #in-5:checked ~ #dimensions #size-5{
+    color : white !important ;
+    background : #000 !important;
+}
+.dimen{
+    font-weight: lighter ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+input[type=radio]{
+    display : none ;
+}
+#varia #vari-box:checked{
+    border : 1px solid #000 ;
+    border-radius : 1px ;
+}
+.qty{
+    width : 150px ;
+    display :block ;
+    margin-top : 5% ;
+    margin-bottom: 5% ;
+}
+.add{
+    margin: 10px;
+    padding : 5px;
+    font-weight : 600 ;
+    cursor: pointer ;
+    border-radius: 5px;
+    font-size: large;
+    color : #464e6b;
+    border-radius : 1px;
+    place-content: center;
+    text-align: center ;
+}
+.main-description , .ship{
+    width : 100% ;
+    display :flexbox ;
+    text-transform : capitalize ;
+    padding : 5px;
+    height : auto ;
+}
+*{ box-sizing: border-box;}         /*specifies the behaviour of the dimension of the box */
+    .slider{                            /*styling for the slider container */
+        margin : 0 auto 0 auto ;
+        position : relative ;
+    }
+    .slider{            
+        margin-top : 30px;              /* specifying the actual slider but using the case sensitivity */        
+        width : auto;
+        padding : 10px ;
+        cursor :grab;
+        overflow: hidden;
+    }
+    .slides{
+        display:flex;        
+        padding : 10px;
+        overflow-x: auto;
+        scrollbar-width: 300px;
+        scroll-snap-type: x mandatory;
+        scroll-behavior:smooth;              /* specify whether to use native scrollin in ans overflowing element */
+    }
+    .slides::-webkit-scrollbar{width : 10px; height: 10px;}
+    .slides::-webkit-scrollbar-thumb{ background: white; border-radius: 10px;}
+    .slides::-webkit-scrollbar-track{ background : transparent;}
+    .slides > div{ 
+    flex-shrink: 0;         /* responsiible for shringking the contents*/
+    width : auto;          /* width of the card */
+    height: auto ;        /* height of th card */
+    margin-right: 20px;        
+    border-radius: 10px; 
+    transform: scale(1);            /* not necessary  but still valuable */
+    transition: ease 0.5s;          /* not necessary  but still valuable */ 
+    display: flex;              /* not necessary  but still valuable */
+    }
+    ::-webkit-scrollbar-thumb{
+        background: #fff;
+    }
+.prod-img{
+    width : 100% ;
+    heighT: 70% ;
+    display : block ;
+    background : gray ;
+}
+.prod-info{
+    display : block ;
+    padding : 3px;
+}
+.prod-info div {
+    margin-top : 5px;
+    margin-bottom: 5px;
+}
+.title,.brand,.prod-price,.head{
+    color : #000 ;
+    text-transform: capitalize;
+    display : block ;
+}
+.prod-price{
+    font-weight: 400;
+    text-align: right ;
+}
+.View{
+    color : #fff;
+    padding : 8px;
+    cursor : pointer ;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top : 5px;
+    display : flexbox ;
+    width : 100% ;
+    background : #464e6b;
+    border-radius : 3px;
+}
+.discount-tag{
+    color : red ;
+    font-size: small;
+    text-transform: capitalize;
+    display : inline-block ;
+    margin: 4px ;
+}
+
+/* product card */
+.row-cont{
+    display: inline-block;
+    margin: 5px;
+    padding : 0;
+  }
+  .slideProduct-grid{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    width : 200px ;
+    height : auto ;
+    margin-left : 10px ;
+    margin-right : 10px ;
+  }
+  .slideProduct-grid .slideProduct-image{
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  .slideProduct-grid .slideProduct-image a.image{display: block; }
+  .slideProduct-grid .slideProduct-image img{
+    width: 100%;
+    height: auto;
+  }
+  .slideProduct-grid .slideProduct-discount-label{
+    color: #fff;
+    background: #000 ;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 25px;
+    padding: 0 20px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+  }
+  .slideProduct-grid .product-content{
+    background: #fff;
+    padding: 15px;
+    box-shadow: 0 0 0 5px rgba(0,0,0,0.1) inset;
+  }
+  .slideProduct-grid .slidetitle{
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0 0 7px;
+    color : #000;
+  }
+  .slideProduct-grid .slidetitle a{
+    color: #777;
+    transition: all 0.3s ease 0s;
+  }
+  .slideProduct-grid .slidetitle a:hover{ color: #464e6b; }
+  .slideProduct-grid .slidePrice{
+    color: #0d0d0d;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .slideProduct-grid .slidePrice span{
+    color: #888;
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration: line-through;
+  }
+  .slider{
+    height : auto ;
+    display : block ;
+  }
+@media screen and (max-width : 1024px){
+    body{
+        max-width : 1024px ;
+        height : auto ;
+    }
+    .size sizeel {
+        padding  : 8px;
+        border-radius : 2px;
+    }
+    .btn-prod{
+        font-size:  smaller;
+    }
+    .subtotal,.main-description{
+        font-size: smaller;
+    }
+}
+@media screen and (max-width : 900px) {
+    body{
+        max-width : 900px;
+        height : auto ;
+    }
+    .det-img{
+        width : 100% ;
+        }
+    .det-info{
+        position: relative;
+        margin : 0;
+        width : 100% ;
+        right : 0;
+        display : inline-block ;
+    }
+}
+@media screen and (max-width : 500px) {
+    body{
+        max-width : 500px;
+        height : auto ;
+    }
+    .row-cont{
+        width : 200px;
+        margin : 2px;
+      }
+    .det-img{
+        height : 450px;
+    }
+    .slideProduct-grid{
+        width : 180px;
+    }
+}
+@media screen and (max-width : 320px) {
+    body{
+        max-width : 320px;
+        height : auto ;
+    }
+    .det-img{
+        height : 300px;
+    }
+    .add{
+        padding-top : 3px;
+        padding-bottom : 3px;
+    }
+
+}

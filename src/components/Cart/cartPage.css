@@ -1,0 +1,68 @@
+#cartPage{
+    display : block ;
+    overflow-y : scroll;
+    position: absolute ;
+    top : 0 ;
+    right: 0;
+    z-index: 95 ;
+    width : 50% !important;
+    transition: transform 250ms ease-in-out;
+    background-color: white ;
+    transform: translateX(1200px);
+    height : 100vh ;
+    position: fixed ;
+}
+
+input[type="checkbox"]#cartIconIn:checked ~ #cartPage {
+    transform: translateX(0px)!important ;
+}
+
+#cartIcon{
+    display : block ;
+    position : absolute ;
+    width: 50px ;
+    height : 50px ;
+    top : 10px ;
+    right : 20px ;
+    z-index: 99 ;
+    position: fixed ;
+}
+#bin{
+    display : block ;
+    width: 30px ;
+    height : 30px ;
+    z-index: 99 ;
+}
+#cartIcon img , #bin img{ 
+    width : 100% ;
+    height: 100% ;
+    object-fit: contain;
+    object-position: center ;
+}
+input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+
+.cartImage{
+    width: 150px ;
+    height: 150px ;
+    border :1px solid green ;
+    display : block ;
+}
+@media screen and (max-width : 996px) {
+    #cartPage{
+        width : 100% !important ; 
+    }
+}
+
+#palBun,#payBun{
+    max-width : 500px ;
+    min-width : 270px ;
+    min-height: 50px ;
+    max-height : 300px ;
+    padding : 5px ;
+    display : block ;
+    margin : 2px auto 2px auto ;
+}

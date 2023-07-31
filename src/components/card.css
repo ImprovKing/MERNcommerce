@@ -1,0 +1,50 @@
+/* Product Card Stylings */
+
+.product-grid{
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin : 10px ;
+  width: 200px ;
+  border : 1px solid rgb(241, 241, 241) ;
+  height: 300px  ;
+}
+.product-grid .product-image{
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.product-grid .product-image a.image{display: block; }
+.product-grid .product-image img{
+  width: 100%;
+  height: auto;
+}
+.product-grid .product-content
+.product-grid .add-to-cart{
+  background: #000;
+  color: #fff;
+  font-size: small;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  width: 100%;
+  padding: 10px 26px;
+  position: absolute;
+  left: 0;
+  bottom: -60px;
+  transition: all 0.3s ease 0s;
+}
+.product-grid:hover .add-to-cart{ bottom: 0; }
+.product-grid .add-to-cart:hover{ text-shadow: 4px 4px rgba(0,0,0,0.2); }
+.product-grid .title a:hover{ color: #464e6b; }
+.product-grid .price{
+  color: #0d0d0d;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.product-grid .price span{
+  color: #000;
+  font-size: 13px;
+  font-weight: 400;
+  text-decoration: line-through;
+}

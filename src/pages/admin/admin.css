@@ -1,0 +1,198 @@
+.admin {
+    max-width: 100% ;
+    height : 100vh ;
+    margin: 0 auto 0 auto ;
+    position : relative ;
+    font-family: "Roboto", sans-serif;
+    color: #000;
+    background-color: #fff ;
+}
+.main-head{
+    position : absolute ;
+    text-align: center ;
+    width : 100% ;
+    top : 0;
+    margin : 10px ;
+}
+/* PUSH MENU */
+#menu-switch{
+  display:none;
+}
+#menu {
+    position: fixed;
+    top: 0;
+    left: -300px;
+
+    width: 300px;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+    -webkit-transition: all .3s ease-in;
+       -moz-transition: all .3s ease-in;
+         -o-transition: all .3s ease-in;
+            transition: all .3s ease-in;
+
+    background-color: #000;
+    z-index : 99; 
+    color : #fff ;
+    box-shadow : 1px 1px 2px #141414 , -1px -1px 2px #141414 ;
+}
+
+input[type=radio]{
+    display : none ;
+}
+input[type=checkbox]#size{
+    display : block ;
+}
+#menu .brand {
+    height: auto;
+    display : block ;
+    width : auto ;
+    padding : 10px;
+    box-shadow : 1.5px 1.5px 4px #141414 , -1.5px -1.5px 4px #141414 ;
+}
+#menu ul {
+    padding: 0;
+    margin-top: 30px;
+}
+
+#menu ul li {
+    display: block;
+
+    font-weight: 900;
+    padding-left : 2px ;
+    line-height: 50px;
+
+    -webkit-transition: all .3s ease;
+       -moz-transition: all .3s ease;
+         -o-transition: all .3s ease;
+            transition: all .3s ease;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #fff;
+}
+#menu ul li label:hover {
+    color : red ;
+}
+
+#menu-toggle{
+    width : 40px ;
+    height : 40px ;
+    display : block ;
+}
+#menu-toggle img{
+    width : 100% ;
+    height : 100% ;
+    object-fit : contain ;
+    object-position : center ;
+}
+
+#menu-switch:checked ~ #menu {
+    left: 0;
+}
+/* MAIN PAGE */
+.page-wrap {
+   
+    padding: 10px;
+    height: auto;
+    background: #fff;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+    -webkit-transition: all .3s ease-in;
+       -moz-transition: all .3s ease-in;
+         -o-transition: all .3s ease-in;
+            transition: all .3s ease-in;
+}
+#menu-switch:checked ~ .page-wrap {
+    margin-left: 300px;
+}
+
+/* MENU TOGGLE ICON */
+#menu-toggle:focus {
+    outline: none;
+}
+#menu-toggle {
+    display:inline-block;
+    position: relative;
+    margin: 20px;
+    cursor: pointer;
+    width : auto ;
+      -webkit-transition: all .5s ease;
+       -moz-transition: all .5s ease;
+         -o-transition: all .5s ease;
+            transition: all .5s ease;
+}
+#menu-toggle:before,
+#menu-toggle:after {
+    position: absolute;
+
+    content: "";
+
+    background-color: #fff;
+}
+/* CONTENT CONTAINER */
+.page-wrap .container {
+    max-width: 100%;
+    height : auto ;
+    min-width: 200px;
+    border : .1px solid gray ;
+    border-radius : 10px;
+}
+/* admin profile */
+.admin-img-cont{
+    width : 50px;
+    height : 50px;
+    border-radius : 50% ;
+    margin: 10px;
+}
+.admin-img-cont img{
+    width : 100% ;
+    height : 100% ;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 50%;
+    aspect-ratio:initial;
+}
+
+/* other links */
+.other-links{
+    position: absolute ;
+    right : 0px;
+    text-transform: capitalize;
+    cursor : pointer ;
+    top : 10px;
+    margin : 5px ;
+}
+
+.admin-text{
+    padding : 10px;
+    text-align : center ;
+}
+
+#prod-list{
+    height : 100vh ;
+    display : block ;
+    padding : 5px ;
+}
+#addbtn{
+    z-index: 0 ;
+}
+
+@media screen and (max-width : 920px ){
+    #adminPC{
+        width : 220px ;
+    }
+}
+
+@media screen and (max-width : 639px ) {
+    #tableCont{
+        width: 100% ;
+        display : block ;
+        overflow-x: scroll ;
+    }
+}

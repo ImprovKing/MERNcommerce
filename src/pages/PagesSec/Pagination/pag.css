@@ -1,0 +1,8 @@
+.pagination-container{
+    display : flex ;
+    padding : 5px;
+}
+.pagination-item {
+    border-radius : 5px ;
+    cursor : pointer ;
+}

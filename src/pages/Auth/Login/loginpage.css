@@ -1,0 +1,18 @@
+#icon-auth{
+  width : 80% !important ;
+  height : 80px !important ;
+  display: block ;
+  }
+  #icon-auth img {
+    width : 100% ;
+    height : 100% ;
+    object-fit : contain ;
+    object-position : 0% ;
+  }
+  
+  @media screen and (max-width : 1024px ){
+    #icon-auth{
+      width : 95% !important;
+    }
+  }
+
