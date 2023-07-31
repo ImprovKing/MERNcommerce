@@ -2,14 +2,13 @@ import './product.css' ;
 import { Link , NavigateFunction, useNavigate , useParams} from 'react-router-dom' ;
 import Footer from "../../components/footer/footer";
 import toast, { Toaster } from 'react-hot-toast';
-import React, { useContext, useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import Navbar from '../../components/nav/navbar';
 import GooglePayButton from '@google-pay/button-react';
 import qs from 'query-string';
 import { StoreData , ItemDetails as Item, CartItemDetails, } from '../../data/store-data';
 import { buildPaymentRequest , getUpdatedPaymentData} from '../google-pay/google-pay-confirmation';
 import CartPage from '../../components/Cart/cart';
-import { StorageProvider } from '../../data/storage-provider';
 import AOS from "aos";
 import "aos/dist/aos.css";
 

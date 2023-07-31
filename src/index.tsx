@@ -27,8 +27,6 @@ import SuperDeals from './pages/PagesSec/SuperDeals';
 import AdminProd from './pages/admin/AdminLandPage';
 import CartPage from './components/Cart/cart' ;
 
-
-import ProdDetails from './pages/productpage/productDetails';
 import FailedPage from './pages/paymentPage/failed';
 import SuccessfulPage from './pages/paymentPage/successful';
 const root = ReactDOM.createRoot(
@@ -64,7 +62,6 @@ root.render(
         but in so doing it must not stay as an object container 
             */}
         <Route path='/auth/login'  element={<Login />} />
-        <Route path='/infos'  element={<ProdDetails />} />
         <Route path='/newcustomer/signup'  element={<Register />} />
         <Route path='/items/trackorder'  element={<Track />} />
         <Route path='/user/payment/payment-failed'  element={<FailedPage />} />
